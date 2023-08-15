@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
-public class MyPostsPage
+public class MyBlog
 {
     private final WebDriver driver;
 
@@ -25,7 +25,7 @@ public class MyPostsPage
     private WebElement copyright;
 
 
-    public MyPostsPage(WebDriver driver) {
+    public MyBlog(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -46,12 +46,12 @@ public class MyPostsPage
         return previousPageActive.isDisplayed();
     }
 
-    public MyPostsPage nextPageClick() {
+    public MyBlog nextPageClick() {
         nextPageActive.click();
         return this;
     }
 
-    public MyPostsPage previousPageClick() {
+    public MyBlog previousPageClick() {
         previousPageActive.click();
         return this;
     }

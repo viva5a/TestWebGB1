@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-public class PageMyPostsTest extends AbstractTestClass {
+public class MyBlogTest extends AbstractTest {
     String copyright = "Copyright ⓒ 2022 . Geekbrains";
 
     @Test
@@ -16,8 +16,8 @@ public class PageMyPostsTest extends AbstractTestClass {
                 .inputPassword(getPassword())
                 .clickOnElement(loginPage.getLoginButton());
 
-        List<WebElement> posts = new MyPostsPage(getDriver()).getPosts();
-        Assertions.assertTrue(new MyPostsPage(getDriver()).isNextPageActive());
+        List<WebElement> posts = new MyBlog(getDriver()).getPosts();
+        Assertions.assertTrue(new MyBlog(getDriver()).isNextPageActive());
 
         if (posts.size() == 0) {
             Assertions.assertFalse(true);
@@ -33,7 +33,7 @@ public class PageMyPostsTest extends AbstractTestClass {
                 .inputPassword(getPassword())
                 .clickOnElement(loginPage.getLoginButton());
 
-        MyPostsPage page = new MyPostsPage(getDriver());
+        MyBlog page = new MyBlog(getDriver());
         List<WebElement> posts = page.getPosts();
 
         if (posts.size() == 4 &&
@@ -58,7 +58,7 @@ public class PageMyPostsTest extends AbstractTestClass {
                 .inputPassword(getPassword())
                 .clickOnElement(loginPage.getLoginButton());
 
-        List<WebElement> posts = new MyPostsPage(getDriver()).getPosts();
+        List<WebElement> posts = new MyBlog(getDriver()).getPosts();
         if (posts.size() == 0) {
             Assertions.assertFalse(true);
         }
@@ -72,8 +72,9 @@ public class PageMyPostsTest extends AbstractTestClass {
 
     @Test
     void copyrightOnPage() {
-        String actual = new MyPostsPage(getDriver())
+        String actual = new MyBlog(getDriver())
                 .getCopyright().getText();
         Assertions.assertEquals(copyright, actual);
     }
 }
+

@@ -3,7 +3,7 @@ package org.web_test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class LoginPageTest extends AbstractTestClass {
+public class LoginPageTest extends AbstractTest {
     String copyright = "Copyright ⓒ 2022 . Geekbrains";
     String expected401 = "401\nInvalid credentials.";
     String expected500 = "500: Argument is not a ByteString";
@@ -59,8 +59,8 @@ public class LoginPageTest extends AbstractTestClass {
     void loginWithNoLatinLoginData() {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage
-                .inputLogin("привет228")
-                .inputPassword("5b9398de16")
+                .inputLogin("Тест1")
+                .inputPassword("064512c88d")
                 .clickOnElement(loginPage.getLoginButton())
                 .getError500();
         Assertions.assertEquals(expected500, loginPage.getErrorBlock500().getText());
@@ -70,8 +70,8 @@ public class LoginPageTest extends AbstractTestClass {
     void loginWithNoValidLoginDataLessSymbol() {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage
-                .inputLogin("l2")
-                .inputPassword("bec2567577")
+                .inputLogin("A7")
+                .inputPassword("be523bdcc1")
                 .clickOnElement(loginPage.getLoginButton())
                 .getError500();
         Assertions.assertEquals(expected500, loginPage.getErrorBlock500().getText());
@@ -81,8 +81,8 @@ public class LoginPageTest extends AbstractTestClass {
     void loginWithNoValidLoginDataMoreSymbol() {
         LoginPage loginPage = new LoginPage(getDriver());
         loginPage
-                .inputLogin("qwertyuiopasdfghjkl21")
-                .inputPassword("4b30ab061a")
+                .inputLogin("Rhoshandiatellyneshiaunneveshenk")
+                .inputPassword("a9ed040194")
                 .clickOnElement(loginPage.getLoginButton())
                 .getError500();
         Assertions.assertEquals(expected500, loginPage.getErrorBlock500().getText());

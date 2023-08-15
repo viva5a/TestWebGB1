@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public class AbstractTestClass {
+public class AbstractTest {
     static ChromeDriver driver;
     static Properties prop = new Properties();
     private static InputStream configFile;

@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="38e8ef89-d599-4550-b60e-28c750cfe27f" name="Changes" comment="NewTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/web_test/MyPostsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web_test/MyBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/web_test/AbstractTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/web_test/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/web_test/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/web_test/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/web_test/PageMyPostsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/web_test/MyBlogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +32,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/web_test/LoginPage.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/web_test/MyPostsPage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/web_test/MyBlog.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/my.properties" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/org/web_test/AbstractTestClass.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/org/web_test/PageMyPostsTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/org/web_test/AbstractTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/org/web_test/LoginPageTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/org/web_test/MyBlogTest.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="MyBlogTest.copyrightOnPage" />
+    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,7 +66,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LoginPageTest">
+  <component name="RunManager" selected="JUnit.LoginPageTest.loginWithNoValidLoginDataMoreSymbol">
     <configuration name="LoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled6" />
       <extension name="coverage">
@@ -68,6 +78,69 @@
       <option name="PACKAGE_NAME" value="org.web_test" />
       <option name="MAIN_CLASS_NAME" value="org.web_test.LoginPageTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.loginWithNoValidLoginDataLessSymbol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.web_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.web_test" />
+      <option name="MAIN_CLASS_NAME" value="org.web_test.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginWithNoValidLoginDataLessSymbol" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.loginWithNoValidLoginDataMoreSymbol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.web_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.web_test" />
+      <option name="MAIN_CLASS_NAME" value="org.web_test.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginWithNoValidLoginDataMoreSymbol" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBlogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.web_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.web_test" />
+      <option name="MAIN_CLASS_NAME" value="org.web_test.MyBlogTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBlogTest.postsCountOnPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.web_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.web_test" />
+      <option name="MAIN_CLASS_NAME" value="org.web_test.MyBlogTest" />
+      <option name="METHOD_NAME" value="postsCountOnPage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,6 +170,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginPageTest.loginWithNoValidLoginDataMoreSymbol" />
+        <item itemvalue="JUnit.LoginPageTest.loginWithNoValidLoginDataLessSymbol" />
+        <item itemvalue="JUnit.MyBlogTest" />
+        <item itemvalue="JUnit.MyBlogTest.postsCountOnPage" />
         <item itemvalue="JUnit.LoginPageTest" />
       </list>
     </recent_temporary>
@@ -117,7 +194,42 @@
       <option name="project" value="LOCAL" />
       <updated>1691921129752</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NewTest">
+      <created>1691937930464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691937930464</updated>
+    </task>
+    <task id="LOCAL-00003" summary="NewTest">
+      <created>1692125103400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692125103400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="NewTest">
+      <created>1692125105919</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692125105919</updated>
+    </task>
+    <task id="LOCAL-00005" summary="NewTest">
+      <created>1692125155623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692125155623</updated>
+    </task>
+    <task id="LOCAL-00006" summary="NewTest">
+      <created>1692127151470</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692127151470</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +237,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -136,7 +260,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="NewTest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TestWebGB$LoginPageTest.ic" NAME="LoginPageTest Coverage Results" MODIFIED="1691920812424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TestWebGB$LoginPageTest_loginWithNoValidLoginDataLessSymbol.ic" NAME="LoginPageTest.loginWithNoValidLoginDataLessSymbol Coverage Results" MODIFIED="1692129609051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.web_test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestWebGB$PageMyPostsTest.ic" NAME="MyBlogTest Coverage Results" MODIFIED="1692127056662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.web_test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestWebGB$LoginPageTest.ic" NAME="LoginPageTest Coverage Results" MODIFIED="1692129030096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.web_test.*</FILTER>
     </SUITE>
   </component>
